@@ -1,0 +1,14 @@
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	IPC$            IPC       IPC Service (Archer_C5)
+	ADMIN$          IPC       IPC Service (Archer_C5)
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+	ARCHER_C5            Archer_C5
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            ARCHER_C5

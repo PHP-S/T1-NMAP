@@ -1,0 +1,15 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.1.1
++ Target Hostname:    192.168.1.1
++ Target Port:        80
++ Start Time:         2024-11-17 19:42:28 (GMT5.5)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ All CGI directories 'found', use '-C none' to test none
++ 26648 requests: 5 error(s) and 2 item(s) reported on remote host
++ End Time:           2024-11-17 19:56:08 (GMT5.5) (820 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

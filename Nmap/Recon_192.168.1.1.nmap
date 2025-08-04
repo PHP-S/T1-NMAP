@@ -1,0 +1,21 @@
+[0;32m---------------------Recon Recommendations---------------------
+[0m
+[0m
+[0;33mWeb Servers Recon:
+[0m
+nikto -host "http://192.168.1.1:7547" | tee "recon/nikto_192.168.1.1_7547.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://192.168.1.1:7547/FUZZ" | tee "recon/ffuf_192.168.1.1_7547.txt"
+
+nikto -host "http://192.168.1.1:80" | tee "recon/nikto_192.168.1.1_80.txt"
+ffuf -ic -w /usr/share/wordlists/dirb/common.txt -e '' -u "http://192.168.1.1:80/FUZZ" | tee "recon/ffuf_192.168.1.1_80.txt"
+
+[0m
+[0;33mSMB Recon:
+[0m
+smbmap -H "192.168.1.1" | tee "recon/smbmap_192.168.1.1.txt"
+smbclient -L "//192.168.1.1/" -U "guest"% | tee "recon/smbclient_192.168.1.1.txt"
+enum4linux -a "192.168.1.1" | tee "recon/enum4linux_192.168.1.1.txt"
+
+
+
+
